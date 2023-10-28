@@ -1,0 +1,191 @@
+/* Шрифт */
+@font-face {
+	font-family: "font";
+	src: url(../fonts/HussarBold-7mRE.otf);
+  }
+body {
+	margin: 0px;
+	padding: 0px;
+	max-width: 1920px;
+	margin: 0px auto;
+	font-family: 'font';
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+hr{
+	height: 1px;
+  	background-color: black;
+  	border-color: black;
+  	width: 100%;
+  	font-size: 10px;
+  	margin: 30px auto;
+}
+/* Главная */
+.content {
+	max-width: 1400px;
+	margin: 0px auto;
+}
+.logo {
+	margin: 0px auto;
+	width: 500px;
+}
+.logo img {
+	width: 500px;
+}
+nav {
+	width: 96.75%;
+	background-color: rgb(157, 157, 157);
+	padding: 30px;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+}
+.nav_container {
+	width: 70%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+}
+/* Слайдер */
+.slider {
+	width: 700px;
+	display: block;
+	overflow: hidden;
+	margin: 0px auto;
+}
+.slider-line {
+	position: relative;
+	display: flex;
+	width: 3500px;
+	transition: all ease 1s;
+}
+.slider-line img {
+	width: 700px;
+}
+.slider-button {
+	display: flex;
+	justify-content: center;
+}
+/* Форма */
+form{
+	margin-bottom: 30px;
+}
+input{
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	margin: 5px auto;
+}
+button{
+	font-size: 18px;
+	padding: 5px 30px;
+	margin: 5px;
+}
+/* Каталог */
+.goods{
+	display: flex;
+	justify-content: space-between;
+}
+.good{
+	margin: 30px;
+	width: 30%;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 20px;
+}
+.good img{
+	margin: 0px auto;
+}
+.adaptiv-filter{
+	display: block;
+	margin: 10px auto;
+}
+/* Карточка товара */
+.cards{
+	display: block;
+  	margin: 10px auto;
+}
+.card{
+  float: left;
+  padding: 30px;
+  display: block;
+  height: 600px;
+  margin: auto 40px;
+}
+.card:hover{
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.card img{
+  width: 325px;
+  height: auto;
+}
+.cards a{
+   text-decoration: none;
+   color: black;
+}
+.cards a:hover{
+	text-decoration: underline;
+ }
+/* Страница о нас */
+.findUs img{
+	width: 100%;
+}
+/* Корзина */
+.cart{
+	margin: 40px;
+	padding: 20px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.cart-price{
+	margin: 0px 30px;
+}
+.cart-order{
+	margin: 30px 40px ;
+	float: left;
+	padding: 30px;
+	display: block;
+	width: 300px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.cart-order-fullinfo{
+	width: 100%;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 30px;
+}
+.cart-order-fullinfo-goods{
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 10px;
+	margin-top: 20px;
+}
+.cart-order-fullinfo-good{
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 20px;
+	float: left;
+	width: 250px;
+	display: block;
+	margin: 20px;
+}
+/* Страница админа */
+textarea{
+	width: 100%;
+	font-size: 18px;
+	padding: 5px;
+}
+select{
+	width: 240px;
+	font-size: 18px;
+}
+/* Информация о товаре */
+.goodInfo{
+	width: 900px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	padding: 30px;
+	margin: 30px auto;
+}
+/* Подвал */
+footer{
+	margin-top: 30px;
+}
