@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music House</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/adaptiv.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="../images/logo.png" alt="" />
+			</div>
+			<nav>
+				<!-- Меню навигации -->
+				<div class="nav_container">
+					<a href="../index.html">О нас</a><br>
+					<a href="catalog.html">Каталог</a><br>
+					<a href="findUs.html">Где нас найти?</a><br>
+					<a href="cart.html">Корзина</a><br>
+					<a href="../index.html#reg">Регистрация</a><br>
+					<a href="../index.html#entry">Вход</a><br>
+				</div>
+			</nav>
+		</header>
+		<div class="content">
+            <h2 align="center">Управление товарами</h2>
+            <hr>
+            <h2 align="center">Добавить товар</h2>
+            <form>
+                <input type="text" placeholder="Название">
+                <textarea name="" id="" cols="30" rows="10" style="resize: none;" placeholder="Описание"></textarea>
+                <input type="number" placeholder="Цена">
+                <input type="text" placeholder="Год производства" maxlength="4">
+                <button>Выбрать картинку</button>Файл не выбран<br>
+                <button>Добавить</button>
+            </form>
+            <select name="" id="chang-good">
+                <option value="1">Товар 1</option>
+                <option value="2">Товар 2</option>
+                <option value="3">Товар 3</option>
+                <option value="4">Товар 4</option>
+            </select>
+            <button>Удалить</button>
+            <button>Редактировать</button>
+            <h2 align="center">Управление категориями</h2>
+            <hr>
+            <h2 align="center">Добавить категорию</h2>
+            <form action="">
+                <input type="text" placeholder="Название">
+                <button>Добавить</button>
+            </form>
+            <select name="" id="chang-category">
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="3">Категория 3</option>
+                <option value="4">Категория 4</option>
+            </select>
+            <button>Удалить</button>
+			<h2 align="center">Заказы</h2>
+			<hr>
+            <h2 align="center">Фильтры</h2>
+            <div><button id="ordersFilterAll">Все</button><button id="ordersFilterNew">Новые</button><button id="ordersFilterConfirm">Подтверждённые</button><button id="ordersFilterReject">Отклонённые</button></div>
+            <hr>
+            <div class="cart-orders">
+				<div class="cart-order" id="reject">
+					<h2>Заказ №36783</h2>
+					<p>Товаров: 23</p>
+					<p>Цена: 103000 р.</p>
+					<p><b>Статус: Отменено</b></p>
+					<p>Причина: слишком много товаров</p>
+				</div>
+				<div class="cart-order" id="new">
+					<h2>Заказ №27354</h2>
+					<p>Товаров: 5</p>
+					<p>Цена: 30000 р.</p>
+					<p><b>Статус: Новый</b></p>
+					<p>Отменена заказа:</p>
+                    <p><input type="text" placeholder="Причина отмены"></p>
+                    <button>Отменить</button>
+				</div>
+				<div class="cart-order" id="reject">
+					<h2>Заказ №27653</h2>
+					<p>Товаров: 28</p>
+					<p>Цена:  170000р.</p>
+					<p><b>Статус: Отменено</b></p>
+					<p>Причина: слишком много товаров</p>
+				</div>
+				<div class="cart-order" id="new">
+					<h2>Заказ №23523</h2>
+					<p>Товаров: 5</p>
+					<p>Цена: 30000 р.</p>
+					<p><b>Статус: Новый</b></p>
+					<p>Отменена заказа:</p>
+                    <p><input type="text" placeholder="Причина отмены"></p>
+                    <button>Отменить</button>
+				</div>
+				<div class="cart-order" id="reject">
+					<h2>Заказ №23672</h2>
+					<p>Товаров: 21</p>
+					<p>Цена: 90000 р.</p>
+					<p><b>Статус: Отменено</b></p>
+					<p>Причина: слишком много товаров</p>
+				</div>
+				<div class="cart-order" id="confirm">
+					<h2>Заказ №73456</h2>
+					<p>Товаров: 23</p>
+					<p>Цена: 103000 р.</p>
+					<p><b>Статус: Выполнено</b></p>
+				</div>
+				<div class="cart-order" id="reject">
+					<h2>Заказ №23975</h2>
+					<p>Товаров: 26</p>
+					<p>Цена: 130000 р.</p>
+					<p><b>Статус: Отменено</b></p>
+					<p>Причина: слишком много товаров</p>
+				</div>
+            </div>
+			<div style="clear: both;"></div>
+		</div>
+		<div style="clear: both;"></div>
+		<footer>
+			<nav>
+				<!-- Меню навигации -->
+				<div class="nav_container">
+					<a href="../index.html">О нас</a><br>
+					<a href="catalog.html">Каталог</a><br>
+					<a href="findUs.html">Где нас найти?</a><br>
+					<a href="cart.html">Корзина</a><br>
+					<a href="../index.html#reg">Регистрация</a><br>
+					<a href="../index.html#entry">Вход</a><br>
+				</div>
+			</nav>
+		</footer>
+		<script src="../js/ordersFilter.js"></script>
+	</body>
+</html>
